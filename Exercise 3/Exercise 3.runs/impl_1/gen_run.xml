@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1779353655">
+  <File Type="ROUTE-PWR" Name="ALU_Unit_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ALU_Unit.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="ALU_Unit_power_summary_routed.pb"/>
+  <File Type="OPT-RQA-PB" Name="ALU_Unit_rqa_opted.pb"/>
+  <File Type="REPORTS-TCL" Name="ALU_Unit_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="ALU_Unit_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="ALU_Unit_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ALU_Unit_drc_opted.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ALU_Unit_routed_bb.dcp"/>
+  <File Type="OPT-UTIL" Name="ALU_Unit_utilization_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ALU_Unit_timing_summary_routed.pb"/>
+  <File Type="OPT-UTIL-PB" Name="ALU_Unit_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ALU_Unit_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ALU_Unit.hwdef"/>
+  <File Type="OPT-TIMING" Name="ALU_Unit_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="ALU_Unit_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ALU_Unit_drc_pwropted.rpt"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="ALU_Unit.nts"/>
+  <File Type="PWROPT-TIMING" Name="ALU_Unit_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ALU_Unit_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ALU_Unit_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ALU_Unit_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ALU_Unit_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ALU_Unit_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ALU_Unit_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ALU_Unit_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ALU_Unit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="NOC_SOLUTION_FILE" Name="ALU_Unit.ncr"/>
+  <File Type="PLACE-TIMING" Name="ALU_Unit_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ALU_Unit_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="ALU_Unit_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ALU_Unit_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ALU_Unit_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ALU_Unit_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ALU_Unit_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="ALU_Unit_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-UTIL" Name="ALU_Unit_utilization_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ALU_Unit_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ALU_Unit_routed.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ALU_Unit_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="ALU_Unit_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="ALU_Unit_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ALU_Unit_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ALU_Unit_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ALU_Unit_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ALU_Unit_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ALU_Unit_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="ALU_Unit_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="ALU_Unit_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ALU_Unit_route_status.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ALU_Unit_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ALU_Unit_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ALU_Unit_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ALU_Unit_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ALU_Unit_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ALU_Unit_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ALU_Unit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ALU_Unit_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Mux_4_4_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Mux_4_4_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Mux_4_4_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Mux_4_4_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Mux_4_4_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Mux_4_4_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="ALU_Unit.bit"/>
+  <File Type="BG-BIN" Name="ALU_Unit.bin"/>
+  <File Type="BITSTR-MSK" Name="ALU_Unit.msk"/>
+  <File Type="BITSTR-RBT" Name="ALU_Unit.rbt"/>
+  <File Type="BITSTR-NKY" Name="ALU_Unit.nky"/>
+  <File Type="BITSTR-BMM" Name="ALU_Unit_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ALU_Unit.mmi"/>
+  <File Type="PDI-FILE" Name="ALU_Unit.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="ALU_Unit_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="ALU_Unit_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="ALU_Unit.rcfi"/>
+  <File Type="CFI_FILE" Name="ALU_Unit.cfi"/>
+  <File Type="RNPI_FILE" Name="ALU_Unit.rnpi"/>
+  <File Type="RCDO-FILE" Name="ALU_Unit.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="ALU_Unit_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="ALU_Unit_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="ALU_Unit_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="ALU_Unit_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="ALU_Unit_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="ALU_Unit_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="ALU_Unit_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="ALU_Unit_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="ALU_Unit_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="ALU_Unit_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="ALU_Unit_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="ALU_Unit_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="ALU_Unit_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="ALU_Unit_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="ALU_Unit_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="ALU_Unit.npi"/>
+  <File Type="RBD_FILE" Name="ALU_Unit.rbd"/>
+  <File Type="MMI-FILE" Name="ALU_Unit.mmi"/>
+  <File Type="BIF-FILE" Name="ALU_Unit.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="ALU_Unit_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="ALU_Unit_pld.bif"/>
+  <File Type="LTX-FILE" Name="ALU_Unit.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="ALU_Unit_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="ALU_Unit_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ALU_Unit.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ALU_Unit.sysdef"/>
+  <File Type="BG-BGN" Name="ALU_Unit.bgn"/>
+  <File Type="BG-DRC" Name="ALU_Unit.drc"/>
+  <File Type="RDI-RDI" Name="ALU_Unit.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="ALU_Unit_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ALU_Unit_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Mux_4_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux_4_4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU_Unit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ALU_Unit"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/cst.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

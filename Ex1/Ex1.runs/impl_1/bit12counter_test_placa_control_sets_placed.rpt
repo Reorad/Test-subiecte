@@ -1,0 +1,115 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed May 20 16:46:29 2026
+| Host         : Sebi running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bit12counter_test_placa_control_sets_placed.rpt
+| Design       : bit12counter_test_placa
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    37 |
+|    Minimum number of control sets                        |    37 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   252 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    37 |
+| >= 0 to < 4        |    36 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              44 |           24 |
+| No           | Yes                   | No                     |              12 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              12 |           12 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                  |         Enable Signal        |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------------+------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  Sec_half/Q_aux                                | Counter/Counter_1/Q_aux_0[0] | Counter/Counter_2/Q_aux_reg[2]_LDC_i_1__0_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_1/Q_aux_reg[3]_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_1/Q_aux_reg[1]_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_1/Q_aux_reg[0]_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_1/Q_aux_reg[2]_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_2/Q_aux_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_2/Q_aux_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_2/Q_aux_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_2/Q_aux_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_3/Q_aux_reg[1]_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_3/Q_aux_reg[0]_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_3/Q_aux_reg[3]_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                |                              | Counter/Counter_3/Q_aux_reg[2]_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | En_count_IBUF                | Counter/Counter_1/Q_aux_reg[3]_LDC_i_1_n_0    |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | En_count_IBUF                | Counter/Counter_1/Q_aux_reg[0]_LDC_i_1_n_0    |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | En_count_IBUF                | Counter/Counter_1/Q_aux_reg[1]_LDC_i_1_n_0    |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | En_count_IBUF                | Counter/Counter_1/Q_aux_reg[2]_LDC_i_1_n_0    |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | Counter/Counter_1/Q_aux_0[0] | Counter/Counter_2/Q_aux_reg[1]_LDC_i_1__0_n_0 |                1 |              1 |         1.00 |
+|  Counter/Counter_3/Q_aux_reg[3]_LDC_i_1__1_n_0 |                              | Counter/Counter_3/Q_aux_reg[3]_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | Counter/Counter_1/Q_aux_0[0] | Counter/Counter_2/Q_aux_reg[3]_LDC_i_1__0_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | Counter/Counter_1/Q_aux_0[0] | Counter/Counter_2/Q_aux_reg[0]_LDC_i_1__0_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | Counter/Counter_2/Q_aux_0[0] | Counter/Counter_3/Q_aux_reg[1]_LDC_i_1__1_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | Counter/Counter_2/Q_aux_0[0] | Counter/Counter_3/Q_aux_reg[0]_LDC_i_1__1_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | Counter/Counter_2/Q_aux_0[0] | Counter/Counter_3/Q_aux_reg[2]_LDC_i_1__1_n_0 |                1 |              1 |         1.00 |
+|  Sec_half/Q_aux                                | Counter/Counter_2/Q_aux_0[0] | Counter/Counter_3/Q_aux_reg[3]_LDC_i_1__1_n_0 |                1 |              1 |         1.00 |
+|  Counter/Counter_1/Q_aux_reg[3]_LDC_i_1_n_0    |                              | Counter/Counter_1/Q_aux_reg[3]_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  Counter/Counter_1/Q_aux_reg[0]_LDC_i_1_n_0    |                              | Counter/Counter_1/Q_aux_reg[0]_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  Counter/Counter_1/Q_aux_reg[1]_LDC_i_1_n_0    |                              | Counter/Counter_1/Q_aux_reg[1]_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  Counter/Counter_1/Q_aux_reg[2]_LDC_i_1_n_0    |                              | Counter/Counter_1/Q_aux_reg[2]_LDC_i_2_n_0    |                1 |              1 |         1.00 |
+|  Counter/Counter_2/Q_aux_reg[1]_LDC_i_1__0_n_0 |                              | Counter/Counter_2/Q_aux_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  Counter/Counter_2/Q_aux_reg[2]_LDC_i_1__0_n_0 |                              | Counter/Counter_2/Q_aux_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  Counter/Counter_2/Q_aux_reg[3]_LDC_i_1__0_n_0 |                              | Counter/Counter_2/Q_aux_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  Counter/Counter_2/Q_aux_reg[0]_LDC_i_1__0_n_0 |                              | Counter/Counter_2/Q_aux_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  Counter/Counter_3/Q_aux_reg[1]_LDC_i_1__1_n_0 |                              | Counter/Counter_3/Q_aux_reg[1]_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  Counter/Counter_3/Q_aux_reg[0]_LDC_i_1__1_n_0 |                              | Counter/Counter_3/Q_aux_reg[0]_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  Counter/Counter_3/Q_aux_reg[2]_LDC_i_1__1_n_0 |                              | Counter/Counter_3/Q_aux_reg[2]_LDC_i_2__1_n_0 |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                 |                              | RST_IBUF                                      |               12 |             32 |         2.67 |
++------------------------------------------------+------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+
+
