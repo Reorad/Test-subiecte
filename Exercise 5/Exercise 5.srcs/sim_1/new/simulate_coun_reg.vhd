@@ -39,7 +39,6 @@ architecture Behavioral of simulate_coun_reg is
     
     component Counter_Reg is
     port( CLK : in STD_LOGIC;
-          CLK_board : in STD_LOGIC;
           Rst : in STD_LOGIC;
           Load : in STD_LOGIC;
           Q_leds_counter : out STD_LOGIC_VECTOR(3 downto 0);
@@ -53,7 +52,6 @@ architecture Behavioral of simulate_coun_reg is
 begin
     UUT : Counter_Reg port map(
         CLK => CLK,
-        CLK_BOARD => CLK,
         RST => RST,
         LOAD => LOAD,
         Q_leds_counter => Q_leds_counter,
