@@ -55,7 +55,7 @@ begin
 
     counter : Counter_16_bit port map(
         CLK => CLK,
-        RST => RST,
+        RST => RST_BTN,
         Q_out => Q_counter_out
     ); 
     

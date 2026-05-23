@@ -14,8 +14,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity RAM is
     port(
         Add : in STD_LOGIC_VECTOR(2 downto 0);
-        Data_in : STD_LOGIC_VECTOR(3 downto 0);
-        We : STD_LOGIC;
+        Data_in : in STD_LOGIC_VECTOR(3 downto 0);
+        We : in STD_LOGIC;
         CLK : in STD_LOGIC;
         RST : in STD_LOGIC;
         Data_out : out STD_LOGIC_VECTOR(3 downto 0)

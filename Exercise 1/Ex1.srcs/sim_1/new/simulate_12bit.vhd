@@ -38,7 +38,7 @@ end simulate_12bit;
 architecture Behavioral of simulate_12bit is
     
     component bit12_counter is
-    port( Load_value : STD_LOGIC_VECTOR(11 downto 0);
+    port( Load_value : in STD_LOGIC_VECTOR(11 downto 0);
           RST : in STD_LOGIC;
           Load : in STD_LOGIC;
           CLK : in STD_LOGIC;
@@ -103,7 +103,7 @@ begin
             Dir_sw <='1';
             wait for 100ns;
             En_cnt <='0';
-            
+            wait;
     end process;
     
     

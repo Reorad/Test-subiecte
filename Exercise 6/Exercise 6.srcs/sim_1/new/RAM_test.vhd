@@ -73,24 +73,20 @@ architecture Behavioral of RAM_test is
             wait for 10ns;
             RST <= '0';
             WE <= '1';
-            for i in 0 to 63 loop
-                if(Index_add mod 2 = 1 ) then
+            for i in 63 downto 0 loop
+                if(i mod 2 = 1 ) then
                     Memory_in <= STD_LOGIC_VECTOR(to_unsigned(Value,ADD_lengh));
-                    Add_in <= STD_LOGIC_VECTOR(to_unsigned(Index_add,ADD));
+                    Add_in <= STD_LOGIC_VECTOR(to_unsigned(i,ADD));
                     Value <= Value - 1;
                 end if;
-                Index_add <= Index_add - 1; 
                 wait for 10ns;
             end loop;
             
-            
             WE <= '0';
-            Index_add <= 2**(ADD+1);
             wait for 20 ns;
             
-            for i in 0 to 63 loop
-                Add_in <= STD_LOGIC_VECTOR(to_unsigned(Index_add,ADD));
-                Index_add <= Index_add - 1;
+            for i in 63 downto 0 loop
+                Add_in <= STD_LOGIC_VECTOR(to_unsigned(i,ADD));
                 wait for 10ns;
             end loop;
             
