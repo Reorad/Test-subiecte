@@ -1,0 +1,248 @@
+
+*** Running vivado
+    with args -log Top_Level.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Level.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat May 23 16:46:06 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Top_Level.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/utils_1/imports/synth_1/Top_Level.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/utils_1/imports/synth_1/Top_Level.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top_Level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 42624
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1264.703 ; gain = 543.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_Level' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Top_Level.vhd:24]
+	Parameter period bound to: 1000 - type: integer 
+INFO: [Synth 8-3491] module 'Clk_div' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/clk_div.vhd:14' bound to instance 'clko' of component 'Clk_div' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Top_Level.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'Clk_div' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/clk_div.vhd:23]
+	Parameter period bound to: 1000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Clk_div' (0#1) [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/clk_div.vhd:23]
+INFO: [Synth 8-3491] module 'Shift_reg' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Shift_reg.vhd:14' bound to instance 'Shifter' of component 'Shift_reg' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Top_Level.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'Shift_reg' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Shift_reg.vhd:22]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/D_FF.vhd:34' bound to instance 'D1' of component 'D_FF' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Shift_reg.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'D_FF' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/D_FF.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'D_FF' (0#1) [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/D_FF.vhd:41]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/D_FF.vhd:34' bound to instance 'D2' of component 'D_FF' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Shift_reg.vhd:41]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/D_FF.vhd:34' bound to instance 'D3' of component 'D_FF' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Shift_reg.vhd:47]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/D_FF.vhd:34' bound to instance 'D4' of component 'D_FF' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Shift_reg.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'Shift_reg' (0#1) [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Shift_reg.vhd:22]
+INFO: [Synth 8-3491] module 'segment7b' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/seg7.vhd:9' bound to instance 'Seg7_out' of component 'segment7b' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Top_Level.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'segment7b' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/seg7.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'segment7b' (0#1) [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/seg7.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Top_Level' (0#1) [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/sources_1/new/Top_Level.vhd:24]
+WARNING: [Synth 8-3917] design Top_Level has port Anodes[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top_Level has port Anodes[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top_Level has port Anodes[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top_Level has port Anodes[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1382.379 ; gain = 660.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1382.379 ; gain = 660.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1382.379 ; gain = 660.969
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1382.379 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/constrs_1/new/cst.xdc]
+Finished Parsing XDC File [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/constrs_1/new/cst.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.srcs/constrs_1/new/cst.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1451.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1451.438 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1451.438 ; gain = 730.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1451.438 ; gain = 730.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1451.438 ; gain = 730.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1451.438 ; gain = 730.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design Top_Level has port Anodes[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top_Level has port Anodes[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top_Level has port Anodes[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top_Level has port Anodes[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1451.438 ; gain = 730.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1579.074 ; gain = 857.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1601.234 ; gain = 879.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1601.234 ; gain = 879.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.344 ; gain = 1117.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.344 ; gain = 1117.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.344 ; gain = 1117.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.344 ; gain = 1117.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.344 ; gain = 1117.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.344 ; gain = 1117.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT4   |    11|
+|4     |LUT5   |    33|
+|5     |LUT6   |     2|
+|6     |FDCE   |    36|
+|7     |IBUF   |     3|
+|8     |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.344 ; gain = 1117.934
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1839.344 ; gain = 1048.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1839.344 ; gain = 1117.934
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1844.031 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1847.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: eb26764f
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1847.711 ; gain = 1312.379
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1847.711 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/Exercise 4_7Seg/Exercise 4_7Seg.runs/synth_1/Top_Level.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Top_Level_utilization_synth.rpt -pb Top_Level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 23 16:46:35 2026...

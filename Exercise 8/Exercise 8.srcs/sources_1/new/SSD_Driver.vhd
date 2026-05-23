@@ -56,7 +56,7 @@ begin
                 if ( Counteing < 4) then
                     Counteing <= Counteing + 1;
                 else
-                    Counteing <= 0;
+                    Counteing <= 1;
                 end if;
             end if;
      end process;
