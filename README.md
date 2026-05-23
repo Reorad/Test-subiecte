@@ -1,8 +1,8 @@
-# Proiecte de Dispozitive Digitale (DSD)
+# Execitii DSD Suta pregatire Colocviu 
 
-Acest depozit conține implementări în VHDL pentru diverse module și circuite logice, realizate în cadrul laboratorului de Dispozitive Digitale (DSD).
 
-## Index Proiecte / Exerciții
+
+## Exerciții
 
 * **[Exercițiul 1: Numărător pe 12 biți Up/Down](docs/ex1.md)** - Numărător reversibil sincron pe 12 biți, implementat structural prin înlănțuirea a trei module de 4 biți, cu reset asincron, încărcare paralelă și validare (enable).
 * **[Exercițiul 2: Generator de Secvențe cu ROM](docs/ex2.md)** - Generator de secvențe pe 4 biți care citește dinamic o memorie ROM de $16 \times 4$ biți stocând trei funcții booleene specifice.
