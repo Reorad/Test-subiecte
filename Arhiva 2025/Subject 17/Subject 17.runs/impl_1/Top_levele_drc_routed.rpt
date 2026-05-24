@@ -1,0 +1,61 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun May 24 21:51:16 2026
+| Host         : Sebi running 64-bit major release  (build 9200)
+| Command      : report_drc -file Top_levele_drc_routed.rpt -pb Top_levele_drc_routed.pb -rpx Top_levele_drc_routed.rpx
+| Design       : Top_levele
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 4
++-------------+----------+-------------------------------------------------------------+--------+
+| Rule        | Severity | Description                                                 | Checks |
++-------------+----------+-------------------------------------------------------------+--------+
+| PDRC-153    | Warning  | Gated clock check                                           | 2      |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2      |
++-------------+----------+-------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Down/CLK is a gated clock net sourced by a combinational pin Down/Q_int[3]_i_2__0/O, cell Down/Q_int[3]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Up/CLK is a gated clock net sourced by a combinational pin Up/Q_int[3]_i_2/O, cell Up/Q_int[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Down/Q_int[3]_i_2__0 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+cnt/Dwn_cnt/Q_int_reg[0], cnt/Dwn_cnt/Q_int_reg[1],
+cnt/Dwn_cnt/Q_int_reg[2], cnt/Dwn_cnt/Q_int_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Up/Q_int[3]_i_2 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+cnt/Up_cnt/Q_int_reg[0], cnt/Up_cnt/Q_int_reg[1], cnt/Up_cnt/Q_int_reg[2]
+cnt/Up_cnt/Q_int_reg[3]
+Related violations: <none>
+
+

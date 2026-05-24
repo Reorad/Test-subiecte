@@ -1,0 +1,49 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun May 24 16:45:42 2026
+| Host         : Sebi running 64-bit major release  (build 9200)
+| Command      : report_drc -file Top_Level_drc_opted.rpt -pb Top_Level_drc_opted.pb -rpx Top_Level_drc_opted.rpx
+| Design       : Top_Level
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 1
++-------------+----------+-------------------------------------------------------------+--------+
+| Rule        | Severity | Description                                                 | Checks |
++-------------+----------+-------------------------------------------------------------+--------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1      |
++-------------+----------+-------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Btn_continue_comp/Q_int[3]_i_2 is driving clock pin of 23 cells. This could lead to large hold time violations. Involved cells are:
+Register_12/Reg1/Q_int_reg[0], Register_12/Reg1/Q_int_reg[0]_lopt_replica,
+Register_12/Reg1/Q_int_reg[1], Register_12/Reg1/Q_int_reg[1]_lopt_replica,
+Register_12/Reg1/Q_int_reg[2], Register_12/Reg1/Q_int_reg[2]_lopt_replica,
+Register_12/Reg1/Q_int_reg[3], Register_12/Reg1/Q_int_reg[3]_lopt_replica,
+Register_12/Reg2/Q_int_reg[0], Register_12/Reg2/Q_int_reg[0]_lopt_replica,
+Register_12/Reg2/Q_int_reg[1], Register_12/Reg2/Q_int_reg[1]_lopt_replica,
+Register_12/Reg2/Q_int_reg[2], Register_12/Reg2/Q_int_reg[2]_lopt_replica,
+Register_12/Reg2/Q_int_reg[3] (the first 15 of 23 listed)
+Related violations: <none>
+
+

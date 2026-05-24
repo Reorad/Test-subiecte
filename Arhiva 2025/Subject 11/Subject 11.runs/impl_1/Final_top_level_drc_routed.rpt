@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun May 24 17:23:26 2026
+| Host         : Sebi running 64-bit major release  (build 9200)
+| Command      : report_drc -file Final_top_level_drc_routed.rpt -pb Final_top_level_drc_routed.pb -rpx Final_top_level_drc_routed.rpx
+| Design       : Final_top_level
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 2
++-------------+----------+-------------------------------------------------------------+--------+
+| Rule        | Severity | Description                                                 | Checks |
++-------------+----------+-------------------------------------------------------------+--------+
+| PDRC-153    | Warning  | Gated clock check                                           | 1      |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1      |
++-------------+----------+-------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Btn_cn/BTN_CNT_OUT is a gated clock net sourced by a combinational pin Btn_cn/Q_int_aux[3]_i_1/O, cell Btn_cn/Q_int_aux[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Btn_cn/Q_int_aux[3]_i_1 is driving clock pin of 11 cells. This could lead to large hold time violations. Involved cells are:
+C/Cnt/Q_aux_reg[0], C/Cnt/Q_aux_reg[1], C/Cnt/Q_aux_reg[2],
+C/Cnt/Q_aux_reg[3], C/Shifter/Q_int_aux_reg[0], C/Shifter/Q_int_aux_reg[1],
+C/Shifter/Q_int_aux_reg[1]_lopt_replica, C/Shifter/Q_int_aux_reg[2],
+C/Shifter/Q_int_aux_reg[2]_lopt_replica, C/Shifter/Q_int_aux_reg[3]
+C/Shifter/Q_int_aux_reg[3]_lopt_replica
+Related violations: <none>
+
+

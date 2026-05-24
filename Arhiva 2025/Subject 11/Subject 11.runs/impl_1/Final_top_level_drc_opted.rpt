@@ -1,0 +1,46 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun May 24 17:23:11 2026
+| Host         : Sebi running 64-bit major release  (build 9200)
+| Command      : report_drc -file Final_top_level_drc_opted.rpt -pb Final_top_level_drc_opted.pb -rpx Final_top_level_drc_opted.rpx
+| Design       : Final_top_level
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 1
++-------------+----------+-------------------------------------------------------------+--------+
+| Rule        | Severity | Description                                                 | Checks |
++-------------+----------+-------------------------------------------------------------+--------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1      |
++-------------+----------+-------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Btn_cn/Q_int_aux[3]_i_1 is driving clock pin of 11 cells. This could lead to large hold time violations. Involved cells are:
+C/Cnt/Q_aux_reg[0], C/Cnt/Q_aux_reg[1], C/Cnt/Q_aux_reg[2],
+C/Cnt/Q_aux_reg[3], C/Shifter/Q_int_aux_reg[0], C/Shifter/Q_int_aux_reg[1],
+C/Shifter/Q_int_aux_reg[1]_lopt_replica, C/Shifter/Q_int_aux_reg[2],
+C/Shifter/Q_int_aux_reg[2]_lopt_replica, C/Shifter/Q_int_aux_reg[3]
+C/Shifter/Q_int_aux_reg[3]_lopt_replica
+Related violations: <none>
+
+
