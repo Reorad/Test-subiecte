@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Sim_ADD_DIF_behav" "xil_defaultlib.Sim_ADD_DIF" -log "elaborate.log" 

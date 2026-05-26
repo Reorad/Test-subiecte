@@ -1,0 +1,196 @@
+
+*** Running vivado
+    with args -log Top_level_cnt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_level_cnt.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon May 25 15:19:15 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Top_level_cnt.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 529.621 ; gain = 222.023
+Command: synth_design -top Top_level_cnt -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13836
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1070.516 ; gain = 535.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_level_cnt' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.srcs/sources_1/new/Top_level_cnt.vhd:23]
+INFO: [Synth 8-3491] module 'Counter_pornit_oprit' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.srcs/sources_1/new/Counter_pornit_oprit.vhd:14' bound to instance 'C_lsb' of component 'Counter_pornit_oprit' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.srcs/sources_1/new/Top_level_cnt.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'Counter_pornit_oprit' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.srcs/sources_1/new/Counter_pornit_oprit.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'Counter_pornit_oprit' (0#1) [D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.srcs/sources_1/new/Counter_pornit_oprit.vhd:24]
+INFO: [Synth 8-3491] module 'Counter_pornit_oprit' declared at 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.srcs/sources_1/new/Counter_pornit_oprit.vhd:14' bound to instance 'C_msb' of component 'Counter_pornit_oprit' [D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.srcs/sources_1/new/Top_level_cnt.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Top_level_cnt' (0#1) [D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.srcs/sources_1/new/Top_level_cnt.vhd:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1188.227 ; gain = 653.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1188.227 ; gain = 653.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1188.227 ; gain = 653.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1188.227 ; gain = 653.652
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 1381.691 ; gain = 847.117
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 1381.691 ; gain = 847.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 1381.691 ; gain = 847.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     2|
+|4     |LUT3 |     2|
+|5     |LUT4 |     3|
+|6     |LUT5 |     2|
+|7     |FDCE |     8|
+|8     |IBUF |     3|
+|9     |OBUF |     9|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-----------------------+------+
+|      |Instance |Module                 |Cells |
++------+---------+-----------------------+------+
+|1     |top      |                       |    32|
+|2     |  C_lsb  |Counter_pornit_oprit   |    10|
+|3     |  C_msb  |Counter_pornit_oprit_0 |     9|
++------+---------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1613.164 ; gain = 1078.590
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1628.215 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1736.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 73387617
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:45 . Memory (MB): peak = 1736.875 ; gain = 1207.254
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1736.875 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Facultate/Facultate I sem II/DSD/Test subiecte/comp_test/Priority encoder/Priority encoder.runs/synth_1/Top_level_cnt.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Top_level_cnt_utilization_synth.rpt -pb Top_level_cnt_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 25 15:20:13 2026...
